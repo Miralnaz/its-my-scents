@@ -159,5 +159,6 @@ window.chPass=()=>{const a=$('nPass').value;if(a.length<8)return toast('Use at l
   sec(async()=>{await updatePassword(auth.currentUser,a);$('nPass').value=$('nPass2').value=''},'Password updated')};
 window.chName=()=>{const n=$('nName').value.trim();if(!n)return toast('Enter a name');sec(async()=>{await updateProfile(auth.currentUser,{displayName:n});$('meMail').textContent=n+' · '+auth.currentUser.email},'Name saved')};
 </script>
+ <script type="module" src="./firebase-config.js"></script>
 </body>
 </html>
