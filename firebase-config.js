@@ -2,9 +2,8 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
 import { getFirestore } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
 
-// Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyA895Uxj9i-8eS-3jv_5zHuuPXoQIGRwt0",
+  apiKey: "AIzaSyA895Uxj9i-8eS-3jv_5zHuuPXoQIGRWt0",
   authDomain: "hn-scents-1ed84.firebaseapp.com",
   projectId: "hn-scents-1ed84",
   storageBucket: "hn-scents-1ed84.firebasestorage.app",
@@ -16,4 +15,5 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
-export { db };
+// Sabhi zaroori cheezein export kar rahe hain taake error na aaye
+export { app, db, firebaseConfig };
